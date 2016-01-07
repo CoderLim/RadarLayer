@@ -6,8 +6,9 @@
 最近发现使用CAReplicatorLayer实现更简便，以下为swift实例，没有处理其他细节（比如透明度）：
 
 方法ViewDidLoad：
-        {
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
         let replicatorLayer = CAReplicatorLayer()
         replicatorLayer.frame = self.view.bounds
         self.view.layer.addSublayer(replicatorLayer)
@@ -31,7 +32,6 @@
         bar.addAnimation(animation, forKey: nil)
         
         replicatorLayer.instanceCount = 5;
-        //replicatorLayer.instanceTransform = CATransform3DMakeScale(0, 0, 0)
+//        replicatorLayer.instanceTransform = CATransform3DMakeScale(0, 0, 0)
         replicatorLayer.instanceDelay = animation.duration / Double(replicatorLayer.instanceCount)
     }
-
