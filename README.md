@@ -5,6 +5,7 @@
 
 最近发现使用CAReplicatorLayer实现更简便，以下为swift实例，没有处理其他细节（比如透明度）：
 
+
 override func viewDidLoad() {
         super.viewDidLoad()
         let replicatorLayer = CAReplicatorLayer()
