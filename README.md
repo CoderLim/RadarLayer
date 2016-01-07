@@ -30,7 +30,7 @@ override func viewDidLoad() {
         bar.addAnimation(animation, forKey: nil)
         
         replicatorLayer.instanceCount = 5;
-//      replicatorLayer.instanceTransform = CATransform3DMakeScale(0, 0, 0)
+        //replicatorLayer.instanceTransform = CATransform3DMakeScale(0, 0, 0)
         replicatorLayer.instanceDelay = animation.duration / Double(replicatorLayer.instanceCount)
     }
 }
