@@ -5,8 +5,8 @@
 
 最近发现使用CAReplicatorLayer实现更简便，以下为swift实例，没有处理其他细节（比如透明度）：
 
-
-override func viewDidLoad() {
+方法ViewDidLoad：
+        {
         super.viewDidLoad()
         let replicatorLayer = CAReplicatorLayer()
         replicatorLayer.frame = self.view.bounds
@@ -34,5 +34,4 @@ override func viewDidLoad() {
         //replicatorLayer.instanceTransform = CATransform3DMakeScale(0, 0, 0)
         replicatorLayer.instanceDelay = animation.duration / Double(replicatorLayer.instanceCount)
     }
-}
 
