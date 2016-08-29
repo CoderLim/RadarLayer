@@ -1,11 +1,12 @@
 # RadarLayer
-雷达效果Demo
 
-通过添加一组layer并添加动画实现；
+This demo shows Radar effect using layer's animation.
 
-最近发现使用CAReplicatorLayer实现更简便，以下为swift实例，没有处理其他细节（比如透明度）：
+# Demo 
 
-方法ViewDidLoad：
+![image](https://github.com/CoderGLM/RadarLayer/blob/master/screenshots/radar.gif)
+
+I found a new simpler way recently, like this: 
 ----------------------
     override func viewDidLoad() {
         super.viewDidLoad()
